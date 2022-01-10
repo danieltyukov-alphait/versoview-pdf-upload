@@ -27,10 +27,10 @@ export default class App extends Component {
                     <Route path="/viewerCustomization" component={ViewerCustomization} />
                     <Route path="/captureEvents" component={CaptureViewSDKEvents} />
                     <Route path="/localPDFFilePreview" component={LocalPDFFilePreview} />
-                    <Route exact path="/annotationAPIs" component={CRUDAPIs} />
+                    {/* <Route exact path="/annotationAPIs" component={CRUDAPIs} />
                     <Route path="/annotationAPIs/captureEvents" component={CaptureEvents} />
                     <Route path="/annotationAPIs/handlingInPDF" component={HandlingAnnotationsInPDF} />
-                    <Route path="/annotationAPIs/UIConfigurations" component={UIConfigurations} />
+                    <Route path="/annotationAPIs/UIConfigurations" component={UIConfigurations} /> */}
                 </Router>
             </React.Fragment>
         );
