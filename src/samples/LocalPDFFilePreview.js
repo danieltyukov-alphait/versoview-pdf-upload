@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import ViewSDKClient from "./ViewSDKClient";
+import JSZip from "jszip";
 
 class LocalPDFFilePreview extends Component {
     constructor() {
@@ -7,7 +8,7 @@ class LocalPDFFilePreview extends Component {
         this.viewSDKClient = new ViewSDKClient();
     }
 
-    /* Helper function to check if selected file is PDF or not. */
+    /* check if selected file is PDF or not. */
     isValidPDF = file => {
         if (file.type === "application/pdf") {
             return true;
